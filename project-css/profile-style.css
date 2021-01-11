@@ -1,0 +1,166 @@
+/* Personal Profile Project CSS */
+/* font-family: 'Hind', sans-serif; */
+/* font-family: 'Manrope', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+h5 {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 75em;
+  margin: 0 auto;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+  font-family: 'Hind', sans-serif;
+  font-size: 1.2em;
+  padding: 0;
+  width: auto;
+  background-color: #F0F0F0;
+}
+
+.navbar-move {
+  margin-right: 38%;
+}
+
+.nav-link:hover{
+  text-decoration: underline;
+}
+
+.nav-image {
+  width: 150px;
+  margin-top: 15%;
+}
+
+
+/* WELCOME SECTION */
+
+#welcome-section {
+  margin-top: 15%;
+}
+
+.welcome {
+  padding-top: 3%;
+  margin-left: 45%;
+  height: 35vh;
+  width: auto;
+}
+
+.intro-paragraph {
+  font-size: 1.5em;
+}
+
+/* PROJECT CARDS */
+
+#projects {
+  padding-bottom: 5em;
+}
+
+.project-tile {
+  width: 33.3%;
+  padding: .3em;
+}
+
+.content-details {
+  letter-spacing: 0.15em
+}
+
+.project-tile .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+
+.project-tile:hover .content-overlay{
+  opacity: 1;
+}
+
+.project-tile:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+
+.card {
+  border: none;
+}
+
+.content-image {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  padding: 5% 0 5% 45%;
+  background-color: #F0F0F0;
+}
+
+.container-contact {
+  text-align: left;
+  padding-left: 0;
+  padding-top: 5%;
+}
+
+.btn-1 {
+  padding: 0;
+}
+
+.copyright {
+  padding-top: 5%;  
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .intro-paragraph {
+    font-size: 1em;
+  }
+}
